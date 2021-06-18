@@ -1,0 +1,127 @@
+.things_height {
+  min-height: 60vh;
+}
+.container_things {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px 40px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "grid_1 grid_2 grid_3"
+    "grid_4 grid_5 gird_6"
+    "grid_7 grid_8 grid_9";
+  width: 90vw;
+  /* height: 40.4%; */
+  margin: auto;
+  margin-top: 70px;
+}
+.grid_common {
+  cursor: pointer;
+  height: 135%;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgb(226, 226, 226);
+  color: #19191b;
+  font-size: 16px;
+  font-family: Varela Round;
+  transition: all 0.5s ease-in-out;
+  margin-left: 5px;
+  width: 100%;
+}
+.span_text_things {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  padding: 20px;
+}
+.arrow_absolute_things {
+  left: 3px;
+  position: absolute;
+  background: 2px solid #5454d4;
+  border-radius: 50%;
+  padding: 5px 5px;
+  color: rgb(84, 84, 212);
+  top: 10px;
+  border: 2px solid rgb(84, 84, 212);
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow_absolute_things:hover {
+  border: 2px solid transparent;
+  background-color: #5454d4;
+  color: #fff;
+}
+
+.grid_common:hover {
+  box-shadow: 1px 1px 20px 2px rgba(12, 12, 12, 0.5);
+  color: #5454d4;
+}
+.grid_1 {
+  grid-area: grid_1;
+}
+
+.grid_2 {
+  grid-area: grid_2;
+}
+
+.grid_3 {
+  grid-area: grid_3;
+}
+
+.grid_4 {
+  grid-area: grid_4;
+}
+
+.grid_5 {
+  grid-area: grid_5;
+}
+
+.gird_6 {
+  grid-area: gird_6;
+}
+
+.grid_7 {
+  grid-area: grid_7;
+}
+
+.grid_8 {
+  grid-area: grid_8;
+}
+
+.grid_9 {
+  grid-area: grid_9;
+}
+
+@media screen and (max-width: 768px) {
+  .container_things {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 2px;
+  }
+  .span_text_things {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    padding: 20px;
+  }
+  .grid_common {
+    padding: 15px;
+    width: 80%;
+  }
+  .arrow_absolute_things {
+    left: 10px;
+  }
+}

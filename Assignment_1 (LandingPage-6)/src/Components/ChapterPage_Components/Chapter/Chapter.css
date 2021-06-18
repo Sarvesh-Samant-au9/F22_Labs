@@ -1,0 +1,40 @@
+.absolute {
+  position: absolute;
+  left: -20px;
+  right: 100;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #5454d4;
+  padding: 10px 10px;
+  top: calc(45%);
+  transition: all 0.5s ease-in;
+  border: 1px solid #5454d4;
+  cursor: pointer;
+}
+.absolute:hover {
+  color: #fff;
+  background-color: #5454d4;
+  border: 1px solid transparent;
+}
+
+.relative {
+  position: relative;
+}
+.absolute_2 {
+  position: absolute;
+  /* left: calc(98%); */
+  right: -15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #5454d4;
+  padding: 10px 10px;
+  top: calc(45%);
+  transition: all 0.5s ease-in;
+  border: 1px solid #5454d4;
+  cursor: pointer;
+}
+.absolute_2:hover {
+  color: #fff;
+  background-color: #5454d4;
+  border: 1px solid transparent;
+}

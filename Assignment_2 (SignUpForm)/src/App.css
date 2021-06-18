@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-y: scroll;
+  background-color: #f7f8fa;
+}
+.container {
+  width: 30vw;
+  height: 70vh;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px;
+}
+.container:hover {
+  box-shadow: 1px 1px 40px 3px rgba(0, 0, 0, 0.9);
+}
+.container_heading > h1 {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 500;
+}
+
+.container_heading > p {
+  text-align: center;
+  color: #696871;
+}
+.container_input {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  border: 1px solid #191833;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+.container_input--checkbox {
+  position: relative;
+  width: 80%;
+}
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -5px;
+  right: 10px;
+}
+.checkbox_span {
+  cursor: pointer;
+}
+input::placeholder {
+  padding: 5px 20px;
+  font-size: 14px;
+  color: #9c9aaa;
+}
+span {
+  color: #5454b4;
+}
+label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+.container_fullwidth {
+  width: 80%;
+}
+.link_para {
+  text-align: center;
+}
+.link_para > span {
+  cursor: pointer;
+}
+.btn_div {
+  /* display: flex; */
+  outline: none;
+  border: none;
+  width: 80%;
+  margin: auto;
+  border-radius: 4px;
+}
+.btn_p {
+  white-space: nowrap;
+  border-radius: 3px;
+  background: #f0544c;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  padding: 10px 22px;
+}
+
+.btn_p:hover {
+  transition: all ease-in 0.2s;
+  background: #000;
+}
+
+@media screen and (max-width: 400px) {
+  .btn_p {
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    padding: 10px 8px;
+    margin-bottom: 6px;
+  }
+}
+
+.span_danger {
+  color: red;
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 70vw;
+    height: 90vh;
+    font-size: 14px;
+  }
+  .container_heading > h1 {
+    font-size: 25px;
+  }
+}
